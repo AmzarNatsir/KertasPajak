@@ -30,6 +30,7 @@
                     <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                     B.2 Harga Pokok Penjualan
                 </a>
+                <!--
                 <a class="nav-link" href="<?php echo base_url();?>pembelian_bahan_baku">
                     <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                     B.2.1 Pembelian Bahan Baku
@@ -37,6 +38,11 @@
                 <a class="nav-link" href="<?php echo base_url();?>pembelian_dpp_ppn">
                     <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                     B.2.1.1 Pembelian Berdasarkan DPP PPN Pajak Masukan
+                </a>
+                -->
+                <a class="nav-link" href="<?php echo base_url();?>biaya_usaha_lainnya">
+                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                    B.3 Biaya Usaha Lainnya
                 </a>
             </div>
         </div>
