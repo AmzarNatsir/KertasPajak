@@ -54,4 +54,35 @@ class Model_b extends CI_Model {
     {
         return $this->db->where("tahun_pajak", $tahun)->get("b_2")->row();
     }
+    //b.3.1
+    public function insert_b_3_1($data)
+    {
+        $this->db->insert("b_3_1", $data);
+    }
+    public function update_b_3_1($data, $tahun, $bulan)
+    {
+        $this->db->where("tahun_pajak", $tahun)
+                ->where("bulan_pajak", $bulan)
+                ->update("b_3_1", $data);
+    }
+    public function get_data_b_3_1($tahun)
+    {
+        return $this->db->where("tahun_pajak", $tahun)->get("b_3_1")->result_array();
+    }
+    public function get_row_b_3_1($tahun, $bulan)
+    {
+        return $this->db->where("tahun_pajak", $tahun)->where("bulan_pajak", $bulan)->get("b_3_1")->row();
+    }
+    public function cari_b_3_1($tahun, $bulan)
+    {
+        return $this->db->where("tahun_pajak", $tahun)->where("bulan_pajak", $bulan)->get("b_3_1")->result_array();
+    }
+    public function get_sum_spt_b_3_1($tahun)
+    {
+        return $this->db->select_sum("n_spt")->where("tahun_pajak", $tahun)->get("b_3_1")->row();
+    }
+    public function get_sum_pemeriksa_b_3_1($tahun)
+    {
+        return $this->db->select_sum("n_pemeriksa")->where("tahun_pajak", $tahun)->get("b_3_1")->row();
+    }
 }

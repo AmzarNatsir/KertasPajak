@@ -41,8 +41,28 @@
                 </a>
                 -->
                 <a class="nav-link" href="<?php echo base_url();?>biaya_usaha_lainnya">
-                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
                     B.3 Biaya Usaha Lainnya
+                </a>
+                <a class="nav-link" href="<?php echo base_url();?>gaji_kesejahteraan_karyawan">
+                    <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
+                    B.3.1 Gaji dan Kesejahteraan Karyawan
+                </a>
+                <a class="nav-link" href="<?php echo base_url();?>pemasaran">
+                    <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
+                    B.3.2 Pemasaran
+                </a>
+                <a class="nav-link" href="<?php echo base_url();?>sewa">
+                    <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
+                    B.3.3 Sewa
+                </a>
+                <a class="nav-link" href="<?php echo base_url();?>consultant_fee">
+                    <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
+                    B.3.4 Consultant Fee
+                </a>
+                <a class="nav-link" href="<?php echo base_url();?>penyisihan_piutang_ragu_ragu">
+                    <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
+                    B.3.5 Penyisihan Piutang Ragu-Ragu
                 </a>
             </div>
         </div>

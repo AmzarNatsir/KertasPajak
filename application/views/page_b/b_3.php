@@ -36,9 +36,9 @@
         <tr>
           <td>Gaji dan Kesejahteraan Karyawan</td>
           <td>B.3.1</td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_sptwp_1" id="inp_sptwp_1" value="0" style="text-align: right;" readonly></td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_pemeriksa_1" id="inp_pemeriksa_1" value="0" style="text-align: right;" readonly></td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_koreksi_1" id="inp_koreksi_1" value="0" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_sptwp_1" id="inp_sptwp_1" value="<?php echo $gaji_karyawan_spt->n_spt;?>" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_pemeriksa_1" id="inp_pemeriksa_1" value="<?php echo $gaji_karyawan_pem->n_pemeriksa;?>" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_koreksi_1" id="inp_koreksi_1" value="<?php echo $gaji_karyawan_spt->n_spt - $gaji_karyawan_pem->n_pemeriksa;?>" style="text-align: right;" readonly></td>
         </tr>
         <tr>
           <td>Pemasaran</td>
@@ -145,3 +145,10 @@
     </div>
   </div>
 </main>
+<script type="text/javascript">
+  $(document).ready(function() 
+  {
+    window.setTimeout(function () { $("#success-alert").alert('close'); }, 2000);
+    $('.angka').number( true, 0 );
+  });
+</script>
