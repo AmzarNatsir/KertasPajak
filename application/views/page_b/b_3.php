@@ -43,16 +43,16 @@
         <tr>
           <td>Pemasaran</td>
           <td>B.3.2</td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_sptwp_2" id="inp_sptwp_2" value="0" style="text-align: right;" readonly></td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_pemeriksa_2" id="inp_pemeriksa_2" value="0" style="text-align: right;" readonly></td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_koreksi_2" id="inp_koreksi_2" value="0" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_sptwp_2" id="inp_sptwp_2" value="<?php echo $pemasaran_spt->n_spt;?>" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_pemeriksa_2" id="inp_pemeriksa_2" value="<?php echo $pemasaran_pem->n_pemeriksa;?>" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_koreksi_2" id="inp_koreksi_2" value="<?php echo $pemasaran_spt->n_spt - $pemasaran_pem->n_pemeriksa;?>" style="text-align: right;" readonly></td>
         </tr>
         <tr>
           <td>Sewa</td>
           <td>B.3.3</td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_sptwp_3" id="inp_sptwp_3" value="0" style="text-align: right;" readonly></td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_pemeriksa_3" id="inp_pemeriksa_3" value="0" style="text-align: right;" readonly></td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_koreksi_3" id="inp_koreksi_3" value="0" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_sptwp_3" id="inp_sptwp_3" value="<?php echo $sewa_spt->n_spt;?>" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_pemeriksa_3" id="inp_pemeriksa_3" value="<?php echo $sewa_pem->n_pemeriksa;?>" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_koreksi_3" id="inp_koreksi_3" value="<?php echo $sewa_spt->n_spt - $sewa_pem->n_pemeriksa;?>" style="text-align: right;" readonly></td>
         </tr>
         <tr>
           <td>Perjalana Dinas</td>
@@ -99,16 +99,16 @@
         <tr>
           <td>Consultant Fee</td>
           <td>B.3.4</td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_sptwp_10" id="inp_sptwp_10" value="0" style="text-align: right;" readonly></td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_pemeriksa_10" id="inp_pemeriksa_10" value="0" style="text-align: right;" readonly></td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_koreksi_10" id="inp_koreksi_10" value="0" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_sptwp_10" id="inp_sptwp_10" value="<?php echo $konsultan_spt->n_spt;?>" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_pemeriksa_10" id="inp_pemeriksa_10" value="<?php echo $konsultan_pem->n_pemeriksa;?>" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_koreksi_10" id="inp_koreksi_10" value="<?php echo $konsultan_spt->n_spt - $konsultan_pem->n_pemeriksa;?>" style="text-align: right;" readonly></td>
         </tr>
         <tr>
           <td>Penyisihan Piutang Ragu-Ragu</td>
           <td>B.3.5</td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_sptwp_11" id="inp_sptwp_11" value="0" style="text-align: right;" readonly></td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_pemeriksa_11" id="inp_pemeriksa_11" value="0" style="text-align: right;" readonly></td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_koreksi_11" id="inp_koreksi_11" value="0" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_sptwp_11" id="inp_sptwp_11" value="<?php echo $piutang_ragu_spt->n_spt;?>" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_pemeriksa_11" id="inp_pemeriksa_11" value="<?php echo $piutang_ragu_pem->n_pemeriksa;?>" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_koreksi_11" id="inp_koreksi_11" value="<?php echo $piutang_ragu_spt->n_spt - $piutang_ragu_pem->n_pemeriksa;?>" style="text-align: right;" readonly></td>
         </tr>
         <tr>
           <td>Seminar dan Latihan</td>
@@ -134,9 +134,9 @@
         <tr style="background: #f8f9fa">
           <td>&nbsp;&nbsp;Jumlah</td>
           <td></td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_sptwp_total" id="inp_sptwp_total" value="0" style="text-align: right;" readonly></td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_pemeriksa_total" id="inp_pemeriksa_total" value="0" style="text-align: right;" readonly></td>
-          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_koreksi_total" id="inp_koreksi_total" value="0" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_sptwp_total" id="inp_sptwp_total" value="<?php echo $gaji_karyawan_spt->n_spt + $pemasaran_spt->n_spt + $sewa_spt->n_spt +  $konsultan_spt->n_spt + $piutang_ragu_spt->n_spt;?>" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_pemeriksa_total" id="inp_pemeriksa_total" value="<?php echo $gaji_karyawan_pem->n_pemeriksa + $pemasaran_pem->n_pemeriksa + $sewa_pem->n_pemeriksa + $konsultan_pem->n_pemeriksa + $piutang_ragu_pem->n_pemeriksa;?>" style="text-align: right;" readonly></td>
+          <td style="text-align: right;"><input type="text" class="form-control angka" name="inp_koreksi_total" id="inp_koreksi_total" value="<?php echo ($gaji_karyawan_spt->n_spt - $gaji_karyawan_pem->n_pemeriksa) + ($pemasaran_spt->n_spt - $pemasaran_pem->n_pemeriksa) + ($sewa_spt->n_spt - $sewa_pem->n_pemeriksa) + ($konsultan_spt->n_spt - $konsultan_pem->n_pemeriksa) + ($piutang_ragu_spt->n_spt - $piutang_ragu_pem->n_pemeriksa);?>" style="text-align: right;" readonly></td>
         </tr>
         <tr>
           <td colspan="5" style="text-align: center; padding-top: 20px"><button type="submit" class="btn btn-primary">Perbaharui Data</button></td>
