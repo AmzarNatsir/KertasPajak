@@ -64,6 +64,42 @@
                     <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
                     B.3.5 Penyisihan Piutang Ragu-Ragu
                 </a>
+                <a class="nav-link" href="<?php echo base_url();?>penghasilan_dari_luar_usaha">
+                    <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
+                    B.4 Penghasilan dari luar usaha
+                </a>
+                <a class="nav-link" href="<?php echo base_url();?>biaya_dari_luar_usaha">
+                    <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
+                    B.5 Biaya dari luar usaha
+                </a>
+                <a class="nav-link" href="<?php echo base_url();?>penghasilan_neto_luar_negeri">
+                    <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
+                    B.6 Penghasilan neto luar negeri
+                </a>
+                <a class="nav-link" href="<?php echo base_url();?>penyesuaian_fiskal_positif">
+                    <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
+                    B.7 Penyesuaian Fiskal Positif
+                </a>
+                <a class="nav-link" href="<?php echo base_url();?>penyesuaian_fiskal_negatif">
+                    <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
+                    B.8 Penyesiaan Fiskal Negatif
+                </a>
+                <a class="nav-link" href="<?php echo base_url();?>pengurangan_penghasilan_neto">
+                    <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
+                    B.9 Fasilitas Penanaman Modal Berupa Pengurangan Penghasilan Neto
+                </a>
+                <a class="nav-link" href="<?php echo base_url();?>kompensasi_kerugian">
+                    <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
+                    B.10 Kompensasi Kerugian
+                </a>
+                <a class="nav-link" href="<?php echo base_url();?>pph_badan_terutang">
+                    <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
+                    B.11 PPh Badan Terutang
+                </a>
+                <a class="nav-link" href="<?php echo base_url();?>kredit_pajak">
+                    <div class="sb-nav-link-icon"><i class="fas fa-edit"></i></div>
+                    B.12 Kredit Pajak
+                </a>
             </div>
         </div>
         <div class="sb-sidenav-footer">
