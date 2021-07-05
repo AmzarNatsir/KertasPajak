@@ -1,26 +1,22 @@
-<main>
-    <div class="container-fluid">
-        <h1 class="mt-4">B.1.1 Penjualan Lokal</h1>
-        <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item active">B.1.1 Penjualan Lokal</li>
+<!-- Content Header (Page header) -->
+<div class="content-header">
+  <div class="container">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1 class="m-0 text-dark"> B.1.1 Penjualan Lokal</h1>
+      </div><!-- /.col -->
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-right">
+          <li class="breadcrumb-item active">B.1.1 Penjualan Lokal</li>
         </ol>
-        <div class="row">
-            <div class="col-xl-4 col-md-6">
-                <div class="card bg-primary text-white mb-4">
-                    <div class="card-body">Nama Wajib Pajak : PT. ABC</div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6">
-                <div class="card bg-warning text-white mb-4">
-                    <div class="card-body">No. NPWP : xxxxxxx</div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6">
-                <div class="card bg-success text-white mb-4">
-                    <div class="card-body">Masa/Tahun Pajak : <?php echo date("Y");?></div>
-                </div>
-            </div>
-        </div>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<!-- Main content -->
+<div class="content">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
@@ -52,10 +48,9 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-</main>
+</div>
 <script type="text/javascript">
   $(document).ready(function() 
   {

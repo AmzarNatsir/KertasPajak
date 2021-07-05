@@ -1,460 +1,272 @@
-<!-- Content Wrapper. Contains page content -->
-<main>
-  <div class="container-fluid">
-    <h1 class="mt-4">Induk</h1>
-    <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Induk</li>
-    </ol>
+<!-- Content Header (Page header) -->
+<div class="content-header">
+  <div class="container">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1 class="m-0 text-dark"> Dashboard</h1>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<!-- Main content -->
+<div class="content">
+  <div class="container">
     <div class="row">
-        <div class="col-xl-4 col-md-6">
-            <div class="card bg-primary text-white mb-4">
-                <div class="card-body">Nama Wajib Pajak : PT. ABC</div>
-            </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="card bg-primary text-white mb-4">
+            <div class="card-body">Nama Wajib Pajak : PT. BUMI BERKAH SULTRA</div>
         </div>
-        <div class="col-xl-4 col-md-6">
-            <div class="card bg-warning text-white mb-4">
-                <div class="card-body">No. NPWP : xxxxxxx</div>
-            </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="card bg-warning text-white mb-4">
+            <div class="card-body">No. NPWP : xxxxxxx</div>
         </div>
-        <div class="col-xl-4 col-md-6">
-            <div class="card bg-success text-white mb-4">
-                <div class="card-body">Masa/Tahun Pajak : <?php echo date("Y");?></div>
-            </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="card bg-success text-white mb-4">
+            <div class="card-body">Masa/Tahun Pajak : <?php echo date("Y");?></div>
         </div>
+      </div>
     </div>
-    <div class="card mb-4">
-      <table  style="width: 100%" border="1" cellpadding="4">
-        <tr style="background: #f8f9fa">
-          <td rowspan="2" style="width: 50%; text-align: center">Uraian</td>
-          <td rowspan="2" style="width: 5%; text-align: center">Ref</td>
-          <td colspan="2" style="text-align: center">Menurut</td>
-          <td rowspan="2" style="width: 15%; text-align: center">Koreksi</td>
-        </tr>
-        <tr style="background: #f8f9fa">
-          <td style="width: 15%; text-align: center">SPT WP</td>
-          <td style="width: 15%; text-align: center">Pemeriksa</td>
-        </tr>
-        <tr style="background: #f8f9fa">
-          <td><b>Pph Badan</b></td>
-          <td style="text-align: center">B</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Penghasilan Kena Pajak</td>
-          <td></td>
-          <td style="text-align: right;"><?php echo number_format($penjualan_local_spt->n_spt, 0, ",", ".");?></td>
-          <td style="text-align: right;"><?php echo number_format($penjualan_local_pmrs->n_pemeriksa, 0, ",", ".");?></td>
-          <td style="text-align: right;"><?php echo number_format($penjualan_local_spt->n_spt - $penjualan_local_pmrs->n_pemeriksa, 0, ",", ".");?></td>
-        </tr>
-        <tr>
-          <td>PPh Badan Terutang</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Kredit Pajak</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Badan Kurang (Lebih) Bayar</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Sanksi Administrasi</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Badan Yang Masih Harus Dibayar</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-header border-0">
+            <div class="d-flex justify-content-between">
+              <h3 class="card-title">Online Store Visitors</h3>
+              <a href="javascript:void(0);">View Report</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="d-flex">
+              <p class="d-flex flex-column">
+                <span class="text-bold text-lg">820</span>
+                <span>Visitors Over Time</span>
+              </p>
+              <p class="ml-auto d-flex flex-column text-right">
+                <span class="text-success">
+                  <i class="fas fa-arrow-up"></i> 12.5%
+                </span>
+                <span class="text-muted">Since last week</span>
+              </p>
+            </div>
+            <!-- /.d-flex -->
 
-        <tr style="background: #f8f9fa">
-          <td><b>Pph Pasal 21</b></td>
-          <td style="text-align: center">C</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Objek PPh Pasal 21</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Pasal 21 Terutang</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Kredit Pajak</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Pasal 21 Kurang (Lebih) Bayar</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Sanksi Administrasi</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Pasal 21 Yang Masih Harus Dibayar</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
+            <div class="position-relative mb-4">
+              <canvas id="visitors-chart" height="200"></canvas>
+            </div>
 
-        <tr style="background: #f8f9fa">
-          <td><b>Pph Pasal 22</b></td>
-          <td style="text-align: center">E</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Objek PPh Pasal 22</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Pasal 22 Terutang</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Kredit Pajak</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Pasal 22 Kurang (Lebih) Bayar</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Sanksi Administrasi</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Pasal 22 Yang Masih Harus Dibayar</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
+            <div class="d-flex flex-row justify-content-end">
+              <span class="mr-2">
+                <i class="fas fa-square text-primary"></i> This Week
+              </span>
 
-        <tr style="background: #f8f9fa">
-          <td><b>Pph Pasal 23</b></td>
-          <td style="text-align: center">G</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Objek PPh Pasal 23</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Pasal 23 Terutang</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Kredit Pajak</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Pasal 23 Kurang (Lebih) Bayar</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Sanksi Administrasi</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Pasal 23 Yang Masih Harus Dibayar</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
+              <span>
+                <i class="fas fa-square text-gray"></i> Last Week
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header border-0">
+            <h3 class="card-title">Products</h3>
+            <div class="card-tools">
+              <a href="#" class="btn btn-tool btn-sm">
+                <i class="fas fa-download"></i>
+              </a>
+              <a href="#" class="btn btn-tool btn-sm">
+                <i class="fas fa-bars"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card-body table-responsive p-0">
+            <table class="table table-striped table-valign-middle">
+              <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Sales</th>
+                <th>More</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                  Some Product
+                </td>
+                <td>$13 USD</td>
+                <td>
+                  <small class="text-success mr-1">
+                    <i class="fas fa-arrow-up"></i>
+                    12%
+                  </small>
+                  12,000 Sold
+                </td>
+                <td>
+                  <a href="#" class="text-muted">
+                    <i class="fas fa-search"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                  Another Product
+                </td>
+                <td>$29 USD</td>
+                <td>
+                  <small class="text-warning mr-1">
+                    <i class="fas fa-arrow-down"></i>
+                    0.5%
+                  </small>
+                  123,234 Sold
+                </td>
+                <td>
+                  <a href="#" class="text-muted">
+                    <i class="fas fa-search"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                  Amazing Product
+                </td>
+                <td>$1,230 USD</td>
+                <td>
+                  <small class="text-danger mr-1">
+                    <i class="fas fa-arrow-down"></i>
+                    3%
+                  </small>
+                  198 Sold
+                </td>
+                <td>
+                  <a href="#" class="text-muted">
+                    <i class="fas fa-search"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
+                  Perfect Item
+                  <span class="badge bg-danger">NEW</span>
+                </td>
+                <td>$199 USD</td>
+                <td>
+                  <small class="text-success mr-1">
+                    <i class="fas fa-arrow-up"></i>
+                    63%
+                  </small>
+                  87 Sold
+                </td>
+                <td>
+                  <a href="#" class="text-muted">
+                    <i class="fas fa-search"></i>
+                  </a>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- /.card -->
+      </div>
+      <!-- /.col-md-6 -->
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-header border-0">
+            <div class="d-flex justify-content-between">
+              <h3 class="card-title">Sales</h3>
+              <a href="javascript:void(0);">View Report</a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="d-flex">
+              <p class="d-flex flex-column">
+                <span class="text-bold text-lg">$18,230.00</span>
+                <span>Sales Over Time</span>
+              </p>
+              <p class="ml-auto d-flex flex-column text-right">
+                <span class="text-success">
+                  <i class="fas fa-arrow-up"></i> 33.1%
+                </span>
+                <span class="text-muted">Since last month</span>
+              </p>
+            </div>
+            <!-- /.d-flex -->
 
-        <tr style="background: #f8f9fa">
-          <td><b>PPh Pasal 26 Final</b></td>
-          <td style="text-align: center">J</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Objek PPh Pasal 26 Final</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Pasal 26 Final Terutang</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Kredit Pajak</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Pasal 26 Final Kurang (Lebih) Bayar</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Sanksi Administrasi</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Pasal 26 Final Yang Masih Harus Dibayar</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
+            <div class="position-relative mb-4">
+              <canvas id="sales-chart" height="200"></canvas>
+            </div>
 
-        <tr style="background: #f8f9fa">
-          <td><b>PPh Final Pasal 4 Ayat (2)</b></td>
-          <td style="text-align: center">K</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Objek PPh Final Pasal 4 Ayat (2)</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Final Pasal 4 Ayat (2) Terutang</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Kredit Pajak</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Final Pasal 4 Ayat (2) Kurang (Lebih) Bayar</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Sanksi Administrasi</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Final Pasal 4 Ayat (2) Yang Masih Harus Dibayar</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
+            <div class="d-flex flex-row justify-content-end">
+              <span class="mr-2">
+                <i class="fas fa-square text-primary"></i> This year
+              </span>
 
-        <tr style="background: #f8f9fa">
-          <td><b>PPh Pasal 15</b></td>
-          <td style="text-align: center">L</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Objek PPh Pasal 15</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Pasal 15 Terutang</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Kredit Pajak</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Pasal 15 Kurang (Lebih) Bayar</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Sanksi Administrasi</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPh Pasal 15 Yang Masih Harus Dibayar</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-
-        <tr style="background: #f8f9fa">
-          <td><b>PPN Penyerahan BKP/JKP</b></td>
-          <td style="text-align: center">N</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>DPP PPN Yang Harus Dipungut Sendiri</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Pajak Keluaran Yang Harus Dipungut Sendiri</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Pajak Masukan Yang Dapat Diperhitungkan</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPN Kurang (Lebih) Bayar</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Dikompensasi</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPN Kurang (Lebih) Bayar</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>Sanksi Administrasi</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>PPN Yang Masih Harus (Lebih) Dibayar</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-        <tr>
-          <td>STP</td>
-          <td></td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-          <td style="text-align: right;">0</td>
-        </tr>
-      </table>
+              <span>
+                <i class="fas fa-square text-gray"></i> Last year
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- /.card -->
+        <div class="card">
+          <div class="card-header border-0">
+            <h3 class="card-title">Online Store Overview</h3>
+            <div class="card-tools">
+              <a href="#" class="btn btn-sm btn-tool">
+                <i class="fas fa-download"></i>
+              </a>
+              <a href="#" class="btn btn-sm btn-tool">
+                <i class="fas fa-bars"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
+              <p class="text-success text-xl">
+                <i class="ion ion-ios-refresh-empty"></i>
+              </p>
+              <p class="d-flex flex-column text-right">
+                <span class="font-weight-bold">
+                  <i class="ion ion-android-arrow-up text-success"></i> 12%
+                </span>
+                <span class="text-muted">CONVERSION RATE</span>
+              </p>
+            </div>
+            <!-- /.d-flex -->
+            <div class="d-flex justify-content-between align-items-center border-bottom mb-3">
+              <p class="text-warning text-xl">
+                <i class="ion ion-ios-cart-outline"></i>
+              </p>
+              <p class="d-flex flex-column text-right">
+                <span class="font-weight-bold">
+                  <i class="ion ion-android-arrow-up text-warning"></i> 0.8%
+                </span>
+                <span class="text-muted">SALES RATE</span>
+              </p>
+            </div>
+            <!-- /.d-flex -->
+            <div class="d-flex justify-content-between align-items-center mb-0">
+              <p class="text-danger text-xl">
+                <i class="ion ion-ios-people-outline"></i>
+              </p>
+              <p class="d-flex flex-column text-right">
+                <span class="font-weight-bold">
+                  <i class="ion ion-android-arrow-down text-danger"></i> 1%
+                </span>
+                <span class="text-muted">REGISTRATION RATE</span>
+              </p>
+            </div>
+            <!-- /.d-flex -->
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</main>
+</div>
+

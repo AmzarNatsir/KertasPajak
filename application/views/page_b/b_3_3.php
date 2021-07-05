@@ -1,27 +1,23 @@
-<main>
-  <div class="container-fluid">
-    <h1 class="mt-4">B.3.3 Sewa</h1>
-    <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Sewa</li>
-    </ol>
+<!-- Content Header (Page header) -->
+<div class="content-header">
+  <div class="container">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1 class="m-0 text-dark"> B.3.3 Sewa</h1>
+      </div><!-- /.col -->
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-right">
+          <li class="breadcrumb-item active">Sewa</li>
+        </ol>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<!-- Main content -->
+<div class="content">
+  <div class="container">
     <div class="row">
-        <div class="col-xl-4 col-md-6">
-            <div class="card bg-primary text-white mb-4">
-                <div class="card-body">Nama Wajib Pajak : PT. ABC</div>
-            </div>
-        </div>
-        <div class="col-xl-4 col-md-6">
-            <div class="card bg-warning text-white mb-4">
-                <div class="card-body">No. NPWP : xxxxxxx</div>
-            </div>
-        </div>
-        <div class="col-xl-4 col-md-6">
-            <div class="card bg-success text-white mb-4">
-                <div class="card-body">Masa/Tahun Pajak : <?php echo date("Y");?></div>
-            </div>
-        </div>
-    </div>
-    <div class="card mb-4">
       <?php if ($this->session->flashdata('konfirm')): ?>
         <div class="alert alert-info alert-dismissible" id="success-alert">
             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -30,7 +26,7 @@
         </div>
       <?php endif; ?>
       <form action="<?php echo base_url();?>sewa/simpan_data" method="post" onsubmit="return konfirm()">
-      <table  style="width: 100%" border="1" cellpadding="4">
+      <table class="table" style="width: 100%">
         <tr style="background: #f8f9fa">
           <td rowspan="2" style="width: 50%; text-align: center">Uraian</td>
           <td rowspan="2" style="width: 5%; text-align: center">Ref</td>
@@ -144,7 +140,7 @@
       </form>
     </div>
   </div>
-</main>
+</div>
 <script type="text/javascript">
   $(document).ready(function() 
   {

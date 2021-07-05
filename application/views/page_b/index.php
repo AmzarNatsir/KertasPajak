@@ -13,31 +13,27 @@ $laba_bruto_spt = $b_1_spt + $b_2_spt;
 $laba_bruto_pem = $b_1_pmrks + $b_2_pem;
 $laba_bruto_koreksi = $b_1_koreksi - $b_2_koreksi;
 ?>
-<main>
-  <div class="container-fluid">
-    <h1 class="mt-4">Pph Badan</h1>
-    <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Pph Badan</li>
-    </ol>
+<!-- Content Header (Page header) -->
+<div class="content-header">
+  <div class="container">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1 class="m-0 text-dark"> Pph Badan</h1>
+      </div><!-- /.col -->
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-right">
+          <li class="breadcrumb-item active">Pph Badan</li>
+        </ol>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<!-- Main content -->
+<div class="content">
+  <div class="container">
     <div class="row">
-        <div class="col-xl-4 col-md-6">
-            <div class="card bg-primary text-white mb-4">
-                <div class="card-body">Nama Wajib Pajak : PT. ABC</div>
-            </div>
-        </div>
-        <div class="col-xl-4 col-md-6">
-            <div class="card bg-warning text-white mb-4">
-                <div class="card-body">No. NPWP : xxxxxxx</div>
-            </div>
-        </div>
-        <div class="col-xl-4 col-md-6">
-            <div class="card bg-success text-white mb-4">
-                <div class="card-body">Masa/Tahun Pajak : <?php echo date("Y");?></div>
-            </div>
-        </div>
-    </div>
-    <div class="card mb-4">
-      <table  style="width: 100%" border="1" cellpadding="4">
+      <table class="table" style="width: 100%">
         <tr style="background: #f8f9fa">
           <td rowspan="2" style="width: 50%; text-align: center">Uraian</td>
           <td rowspan="2" style="width: 5%; text-align: center">Ref</td>
@@ -200,4 +196,4 @@ $laba_bruto_koreksi = $b_1_koreksi - $b_2_koreksi;
       </table>
     </div>
   </div>
-</main>
+</div>

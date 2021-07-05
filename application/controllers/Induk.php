@@ -22,7 +22,7 @@ class Induk extends CI_Controller {
 		$thn_pajak = date("Y");
 		$data['penjualan_local_spt'] = $this->model_b->get_sum_spt_b_1_1($thn_pajak);
 		$data['penjualan_local_pmrs'] = $this->model_b->get_sum_pemeriksa_b_1_1($thn_pajak);
-		$this->load->view('utama', $data);
+		$this->load->view('induk', $data);
 	}
 
 }

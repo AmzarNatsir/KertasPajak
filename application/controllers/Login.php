@@ -24,7 +24,7 @@ class Login extends CI_Controller {
         {
         	$sess = array("aktif_ses"=>"1", "user_ses"=>"Admin", "user_kat"=>"1");
             $this->session->set_userdata($sess);
-            redirect("induk");   
+            redirect("utama");   
         }
         else
         {
